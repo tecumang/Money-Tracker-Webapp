@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Money Tracker</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h1>Money Tracker</h1>
+
+  <form id="addTransaction">
+    <label>Date:</label>
+    <input type="date" name="date">
+
+    <label>Description:</label>
+    <input type="text" name="description">
+
+    <label>Category:</label>
+    <select name="category">
+      <option value="food">Food</option>
+      <option value="bills">Bills</option>
+      <!-- other options -->
+    </select>
+
+    <label>Amount:</label>
+    <input type="number" name="amount">
+
+    <button type="submit">Add Transaction</button>
+  </form>
+
+  <div id="confirmation" class="success" style="display:none;">
+    Transaction added!
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
